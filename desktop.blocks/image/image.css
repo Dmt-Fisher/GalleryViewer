@@ -1,0 +1,13 @@
+.image
+{
+	display: block;
+	position: absolute;
+	margin: auto;
+	max-height: 98%;
+	max-width: 96%;
+	top: 0.5em;
+	bottom: 0.5em;
+	left: 1%;
+	right: 1%;
+	z-index: 0; 
+}

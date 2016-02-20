@@ -1,0 +1,12 @@
+html, body, .page {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.page
+{
+    font: 13px Helvetica, Arial, sans-serif;
+    background: #fff;
+}

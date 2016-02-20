@@ -1,0 +1,167 @@
+/* ../../desktop.blocks/controls/controls.css:begin */
+.controls
+{
+    position: relative;
+    min-height: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    display: block;
+    opacity: .8;
+    -ms-user-select: none; 
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    user-select: none; 
+}
+
+.controls__left
+{
+    background: url(../../desktop.blocks/controls/img/arr-left-b.png) no-repeat;
+    background-position: left;
+    text-align: right;
+}
+
+.controls__right
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url(../../desktop.blocks/controls/img/arr-right-b.png) no-repeat;
+    background-position: right;
+}
+
+.controls__left:hover, .controls__right:hover {
+
+	    border: 0;
+		background-color: #F5F6F8;
+        cursor: pointer; 
+}
+
+.controls__left, .controls__right, .controls__left:hover, .controls__right:hover
+{
+    height: 100%;
+   	width: 10%;
+    z-index: 10;
+}
+/* ../../desktop.blocks/controls/controls.css:end */
+/* ../../libs/bem-components/common.blocks/image/image.styl:begin */
+.image {
+  border: 0;
+}
+/* ../../libs/bem-components/common.blocks/image/image.styl:end */
+/* ../../desktop.blocks/image/image.css:begin */
+.image
+{
+	display: block;
+	position: absolute;
+	margin: auto;
+	max-height: 98%;
+	max-width: 96%;
+	top: 0.5em;
+	bottom: 0.5em;
+	left: 1%;
+	right: 1%;
+	z-index: 0; 
+}
+/* ../../desktop.blocks/image/image.css:end */
+/* ../../desktop.blocks/wrapper/wrapper.css:begin */
+.wrapper {
+	overflow: hidden;
+	width: 98%;
+	height: 100%;
+	display: block;
+	position: fixed;
+	bottom: 0;
+	margin: 0 ;
+	left: 1%;
+	z-index: 20;
+	height: 26%;
+}
+/* ../../desktop.blocks/wrapper/wrapper.css:end */
+/* ../../desktop.blocks/page/page.css:begin */
+html, body, .page {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.page
+{
+    font: 13px Helvetica, Arial, sans-serif;
+    background: #fff;
+}
+/* ../../desktop.blocks/page/page.css:end */
+/* ../../desktop.blocks/viewport/viewport.css:begin */
+.viewport
+{
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	
+	
+}
+/* ../../desktop.blocks/viewport/viewport.css:end */
+/* ../../desktop.blocks/files/files.css:begin */
+.files
+{
+    position: absolute;
+    margin: 0;
+    margin-right: -20em;
+    padding: 0.5em 0;
+    left: 0;
+    bottom: 0;
+    height: 95%;
+    background: #000; 
+    overflow: hidden;
+   
+}
+
+.files__item
+{
+    display: inline-block;
+    overflow: hidden;
+
+    vertical-align: top;
+    text-align: center;
+ 
+    padding: 0.5em 0em;
+    margin: 0 1em;
+    height: 100%;
+}
+ 
+
+.files__item:hover
+{
+    background: #4169e1;
+    cursor: pointer; 
+}
+ 
+.files__item_current_yes
+{
+    position: relative;
+    background: #ffb6c1;
+}
+
+.files__thumb
+{
+    width: 10em;
+    padding: 0 0.5em;
+}
+
+.files__title
+{   
+    position: relative;
+    display: block;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+    padding: 0.5em 1em;
+    margin: 0em 0 1em 0;
+ 
+    -webkit-transition: background 0.2s ease-in;
+            transition: background 0.2s ease-in;
+}
+/* ../../desktop.blocks/files/files.css:end */

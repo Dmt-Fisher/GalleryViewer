@@ -1,0 +1,64 @@
+.files
+{
+    position: absolute;
+    margin: 0;
+    margin-right: -20em;
+    padding: 0.5em 0;
+    left: 0;
+    bottom: 0;
+    height: 95%;
+    background: #000; 
+    overflow: hidden;
+   
+}
+
+.files__item
+{
+    display: inline-block;
+    overflow: hidden;
+
+    vertical-align: top;
+    text-align: center;
+ 
+    padding: 0.5em 0em;
+    margin: 0 1em;
+    height: 100%;
+}
+ 
+
+.files__item:hover
+{
+    background: #4169e1;
+    cursor: pointer; 
+}
+ 
+.files__item_current_yes
+{
+    position: relative;
+    background: #ffb6c1;
+}
+
+.files__thumb
+{
+    width: 10em;
+    padding: 0 0.5em;
+}
+
+.files__title
+{   
+    position: relative;
+    display: block;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+    padding: 0.5em 1em;
+    margin: 0em 0 1em 0;
+ 
+    -webkit-transition: background 0.2s ease-in;
+       -moz-transition: background 0.2s ease-in;
+        -ms-transition: background 0.2s ease-in;
+         -o-transition: background 0.2s ease-in;
+            transition: background 0.2s ease-in;
+}

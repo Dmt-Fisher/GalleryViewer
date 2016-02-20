@@ -1,0 +1,54 @@
+block('files')(
+
+    js()((function() { return { group: this.ctx.files }; })),
+
+    tag()('ul'),
+    content()(function() {
+      return this.ctx.files.map(function(item){
+                return [
+                    {  
+                        elem: 'item',
+                        mods: { current: item.state ? 'yes' : undefined },
+                        content: [                        
+                            {
+                                elem: 'thumb',
+                                url: item.thumb,
+                                alt: item.title
+                            },
+                            {
+                                elem: 'title',
+                                content: item.title
+                                
+                            },{
+                                
+                                elem: 'image',
+                                url: item.image,
+                                alt: item.title,
+                                state: item.state
+                            }
+                        ]
+                        
+                    },
+                    ' '
+                ];
+
+        });
+    }),
+
+    elem('item')(
+        tag()('li'),
+        js()(function() {
+            return { pos: this.position};
+        })
+    ),
+    elem('thumb')(
+        tag()('img'),
+        attrs()(function() {
+            return { src: this.ctx.url, alt:this.ctx.alt };
+        })
+    ),
+ 
+    elem('title')(
+        tag()('span')
+    )
+);
