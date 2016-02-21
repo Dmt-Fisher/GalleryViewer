@@ -36,11 +36,10 @@
 
 **Отображение картинок**
 
-Все картинки хранятся в каталоге `index/images/`, чтобы включить показ картинок для страницы `index`
-нужно сделать ссылку /desktop.bundles/index/images/на папку с картинками:
+Все картинки хранятся в каталоге `index/images/`, чтобы включить показ картинок для страницы `index` нужно сделать ссылку в `/desktop.bundles/index/` на папку с картинками:
 
 ```
- $ ln -s $(pwd)/index/images/ $(pwd)/desktop.bundles/index/images/
+ $ ln -s $(pwd)/index/images/ $(pwd)/desktop.bundles/index/
 ```
 
 
